@@ -1050,19 +1050,19 @@ function ctaSubmit(){
 // ================================================================
 
 // Console legal warning
-(function(){
+(function(){try{
   const s1='color:#902DCE;font-size:20px;font-weight:700;padding:8px 20px;background:#0f0430;border-radius:4px';
   const s2='color:#C9971A;font-size:13px;font-weight:600';
   const s3='color:rgba(255,255,255,.7);font-size:12px';
   const s4='color:#ff5555;font-size:12px;font-weight:600';
-  console.clear();
+  try { console.clear(); } catch(e) {}
   console.log('%c ALETHINX AI REVOLUTION(tm) ',s1);
   console.log('%c(c) 2026 Alethinx, Inc. All rights reserved.',s2);
   console.log('%cPatent Pending: 64/024,148  |  Trade Secrets: AX-TS-001 to AX-TS-011',s3);
   console.log('%cALETHINX(tm) SOPHYNX(tm) LOGYNX(tm) MASORYX(tm) CLAW Architecture(tm) Autopilot(tm)',s3);
   console.log('%cWARNING: All content, product names, architecture, AI engine designs, prompts, and workflows are the exclusive property of Alethinx, Inc. Unauthorized copying or scraping is strictly prohibited and subject to legal action.',s4);
   console.log('%cDMCA / Legal: hello@alethinx.ai',s3);
-})();
+}catch(e){}})();
 
 // Disable right-click
 document.addEventListener('contextmenu',function(e){e.preventDefault();return false;});
